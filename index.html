@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="de-de">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tut by c-pilot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.1/gist-embed.min.js"></script>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
 
-  </head>
-  <body>
+	<script src="node_modules/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-route/angular-route.min.js"></script>
+	<script src="app.js"></script>  	
+</head>
 
-    <section class="main-content">
-	hello
-      <code data-gist-id="0af56e6a626b12544ac4"></code>
+<body ng-app="myApp">
 
-    </section>
-
-  
-  </body>
+	<ul class="nav nav-pills nav-stacked col-md-1">
+		<li role="presentation" class="active">	<a href="#home"		data-toggle="pill">Home</a></li>
+		<li role="presentation">						<a href="#about"		data-toggle="pill">About</a></li>
+		<li role="presentation">						<a href="#contact"	data-toggle="pill">Contact</a></li>
+	</ul>	 
+	<div ng-view></div>
+</body>
 </html>
-
